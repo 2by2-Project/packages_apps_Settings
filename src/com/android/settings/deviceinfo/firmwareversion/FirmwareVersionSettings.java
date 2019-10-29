@@ -18,6 +18,10 @@ package com.android.settings.deviceinfo.firmwareversion;
 
 import android.app.settings.SettingsEnums;
 import android.content.Context;
+import android.os.Bundle;
+import android.os.SystemProperties;
+import android.view.View;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -26,9 +30,18 @@ import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
+import com.android.settingslib.widget.LayoutPreference;
 
 @SearchIndexable
 public class FirmwareVersionSettings extends DashboardFragment {
+
+    private final String buildVersion = SystemProperties.get("ro.2by2.version");
+    private final String maintainerName = SystemProperties.get("ro.2by2.maintainer");
+
+    private LayoutPreference logoLayoutPref;
+
+    private TextView buildVersionTextView;
+    private TextView maintainerNameTextView;
 
     @Override
     public @Nullable String getPreferenceScreenBindingKey(@NonNull Context context) {
@@ -48,6 +61,26 @@ public class FirmwareVersionSettings extends DashboardFragment {
     @Override
     public int getMetricsCategory() {
         return SettingsEnums.DIALOG_FIRMWARE_VERSION;
+    }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        logoLayoutPref = findPreference("logo_2by2");
+
+        if (logoLayoutPref != null) {
+            buildVersionTextView = logoLayoutPref.findViewById(R.id.logo_version_text);
+            maintainerNameTextView = logoLayoutPref.findViewById(R.id.logo_maintainer_text);
+
+            if (buildVersionTextView != null) {
+                buildVersionTextView.setText("#" + buildVersion);
+            }
+
+            if (maintainerNameTextView != null) {
+                maintainerNameTextView.setText("by " + maintainerName);
+            }
+        }
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

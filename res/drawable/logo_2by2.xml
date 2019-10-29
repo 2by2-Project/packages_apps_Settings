@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024 The 2by2 Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@drawable/logo_2by2_image"
+    android:tint="?android:attr/textColorPrimary" />

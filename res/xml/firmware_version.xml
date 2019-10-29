@@ -21,13 +21,11 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
-    <!-- Device name -->
-    <Preference
-        android:key="about_device_name"
-        android:title="@string/bluetooth_device_name"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.AboutDeviceNamePreferenceController"/>
+    <!-- 2by2 Project logo -->
+    <com.android.settingslib.widget.LayoutPreference
+        android:layout="@layout/logo_2by2_layout_banner"
+        android:key="logo_2by2"
+        android:selectable="false" />
 
     <!-- Device name -->
     <Preference

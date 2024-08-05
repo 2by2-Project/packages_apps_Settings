@@ -19,11 +19,15 @@ package com.android.settings.deviceinfo.aboutphone;
 import android.app.Activity;
 import android.app.settings.SettingsEnums;
 import android.content.Context;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.content.pm.UserInfo;
 import android.os.Bundle;
 import android.os.UserManager;
 import android.view.View;
+import android.util.Log;
+
+import androidx.preference.PreferenceScreen;
 
 import com.android.settings.R;
 import com.android.settings.Utils;
@@ -50,6 +54,7 @@ import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.search.SearchIndexable;
 import com.android.settingslib.widget.LayoutPreference;
+import com.android.settings.widget.EntityHeaderController;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -64,6 +69,7 @@ public class MyDeviceInfoFragment extends DashboardFragment
     private static final String LOG_TAG = "MyDeviceInfoFragment";
     private static final String KEY_EID_INFO = "eid_info";
     private static final String KEY_MY_DEVICE_INFO_HEADER = "my_device_info_header";
+    private static final String KEY_USER_CARD = "my_device_info_usercard";
 
     private BuildNumberPreferenceController mBuildNumberPreferenceController;
 
@@ -89,6 +95,7 @@ public class MyDeviceInfoFragment extends DashboardFragment
     public void onStart() {
         super.onStart();
         initHeader();
+        onUserCard();
     }
 
     @Override
@@ -198,6 +205,48 @@ public class MyDeviceInfoFragment extends DashboardFragment
                     com.android.settingslib.Utils.getUserIcon(getActivity(), userManager, info));
         }
 
+        controller.done(true /* rebindActions */);
+    }
+
+    private void onUserCard() {
+        final PreferenceScreen preferenceScreen = getPreferenceScreen();
+        if (preferenceScreen == null) {
+            Log.e(LOG_TAG, "Preference screen is null");
+            return;
+        }
+        final LayoutPreference headerPreference = (LayoutPreference) preferenceScreen.findPreference(KEY_USER_CARD);
+        if (headerPreference == null) {
+            Log.e(LOG_TAG, "Header preference is null");
+            return;
+        }
+        final View userCard = headerPreference.findViewById(R.id.entity_header);
+        if (userCard == null) {
+            Log.e(LOG_TAG, "User card view is null");
+            return;
+        }
+        final Activity context = getActivity();
+        if (context == null) {
+            Log.e(LOG_TAG, "Activity is null");
+            return;
+        }
+        final Bundle bundle = getArguments();
+        if (bundle == null) {
+            Log.e(LOG_TAG, "Bundle is null");
+            return;
+        }
+        final EntityHeaderController controller = EntityHeaderController
+                .newInstance(context, this, userCard)
+                .setRecyclerView(getListView(), getSettingsLifecycle())
+                .setButtonActions(EntityHeaderController.ActionType.ACTION_NONE,
+                       EntityHeaderController.ActionType.ACTION_NONE);
+        userCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.setComponent(new ComponentName("com.android.settings","com.android.settings.Settings$CustomSettingsActivity"));
+                startActivity(intent);
+            }
+        });
         controller.done(true /* rebindActions */);
     }
 

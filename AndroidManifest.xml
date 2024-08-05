@@ -5440,5 +5440,16 @@
         </receiver>
 
         <!-- This is the longest AndroidManifest.xml ever. -->
+
+        <!-- 2byTricks -->
+        <activity android:name=".Settings$CustomSettingsActivity"
+                  android:exported="true"
+                  android:parentActivityName="com.android.settings">
+            <intent-filter>
+                <action android:name="com.android.settings.action.SETTINGS"/>
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="jp.project2by2.settings.CustomSettings"/>
+        </activity>
     </application>
 </manifest>

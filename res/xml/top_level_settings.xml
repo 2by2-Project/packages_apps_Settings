@@ -20,6 +20,12 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="top_level_settings">
 
+    <com.android.settingslib.widget.LayoutPreference
+        android:layout="@layout/usercard"
+        android:fragment="jp.project2by2.settings.CustomSettings"
+        android:key="my_device_info_usercard"
+        android:order="-180"/>
+
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.network.NetworkDashboardFragment"
         android:icon="@drawable/ic_settings_wireless"

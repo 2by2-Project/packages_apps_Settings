@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/entity_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginVertical="8dp"
+    android:padding="16dp">
+
+    <!-- 2by2 Project -->
+    <com.google.android.material.card.MaterialCardView
+        android:orientation="vertical"
+        android:id="@+id/banner_card"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        app:cardCornerRadius="24dp"
+        android:elevation="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/twobytwo_card"
+                android:scaleType="fitXY"
+                android:foreground="?android:attr/selectableItemBackground" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/twobytwo_text" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>

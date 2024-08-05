@@ -55,15 +55,21 @@ android_library {
     srcs: [
         "src/**/*.java",
         "src/**/*.kt",
+        "2byTricks/src/**/*.java",
+        "2byTricks/src/**/*.kt",
     ],
     exclude_srcs: [
         "src/com/android/settings/biometrics/fingerprint2/lib/**/*.kt",
     ],
     use_resource_processor: true,
+
+    aaptflags: ["--extra-packages jp.project2by2.settings"],
+
     resource_dirs: [
         "res",
         "res-export", // for external usage
         "res-product",
+        "2byTricks/res",
         "TouchGestures/res"
     ],
     static_libs: [

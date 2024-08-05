@@ -212,6 +212,8 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 import com.android.settings.livedisplay.LiveDisplaySettings;
 import ink.kscope.settings.wifi.tether.WifiTetherClientManager;
 
+import jp.project2by2.settings.CustomSettings;
+
 public class SettingsGateway {
 
     /**
@@ -410,7 +412,10 @@ public class SettingsGateway {
             ZenModeFragment.class.getName(),
             LiveDisplaySettings.class.getName(),
             WifiTetherClientManager.class.getName(),
-            WirelessDebuggingFragment.class.getName()
+            WirelessDebuggingFragment.class.getName(),
+
+            // 2by2 Project additions
+            CustomSettings.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -458,5 +463,8 @@ public class SettingsGateway {
             Settings.MemtagPageActivity.class.getName(),
             Settings.NavigationModeSettingsActivity.class.getName(),
             Settings.WirelessDebuggingActivity.class.getName(),
+
+            // 2by2 Project additions
+            Settings.CustomSettingsActivity.class.getName(),
     };
 }

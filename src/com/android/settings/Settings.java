@@ -524,4 +524,7 @@ public class Settings extends SettingsActivity {
      * Activity for WirelessDebuggingActivity
      */
     public static class WirelessDebuggingActivity extends SettingsActivity { /* empty */ }
+
+    // 2by2 Project Additions.
+    public static class CustomSettingsActivity extends SettingsActivity {}
 }

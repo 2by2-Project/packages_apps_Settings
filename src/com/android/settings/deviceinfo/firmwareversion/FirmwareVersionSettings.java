@@ -19,6 +19,10 @@ package com.android.settings.deviceinfo.firmwareversion;
 import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
+import android.os.SystemProperties;
+import android.view.View;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -28,11 +32,19 @@ import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.deviceinfo.BuildNumberPreferenceController;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
+import com.android.settingslib.widget.LayoutPreference;
 
 @SearchIndexable
 public class FirmwareVersionSettings extends DashboardFragment {
 
     private BuildNumberPreferenceController mBuildNumberPreferenceController;
+
+    private final String currentBuildVersion = SystemProperties.get("ro.2by2.build.version");
+    private final String currentBuildVersionCodename = SystemProperties.get("ro.2by2.build.version.codename");
+    private final String currentBuildType = SystemProperties.get("ro.2by2.buildtype");
+
+    private LayoutPreference bannerLayoutPref;
+    private TextView buildVersionTextView;
 
     @Override
     public void onAttach(Context context) {
@@ -67,6 +79,22 @@ public class FirmwareVersionSettings extends DashboardFragment {
     @Override
     public int getMetricsCategory() {
         return SettingsEnums.DIALOG_FIRMWARE_VERSION;
+    }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        bannerLayoutPref = findPreference("twobytwo_banner");
+
+        if (bannerLayoutPref != null) {
+            buildVersionTextView = bannerLayoutPref.findViewById(R.id.logo_version_text);
+            final boolean isOfficialBuild = !currentBuildType.toUpperCase().equals("HOMEMADE");
+
+            if (buildVersionTextView != null) {
+                buildVersionTextView.setText(currentBuildVersion + " | " + currentBuildVersionCodename);
+            }
+        }
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

@@ -32,8 +32,8 @@ import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
-import com.yasp.settings.preferences.colorpicker.ColorPickerPreference;
-import com.yasp.settings.preferences.CustomSeekBarPreference;
+import jp.project2by2.settings.preferences.colorpicker.ColorPickerPreference;
+import jp.project2by2.settings.preferences.CustomSeekBarPreference;
 
 import java.lang.CharSequence;
 

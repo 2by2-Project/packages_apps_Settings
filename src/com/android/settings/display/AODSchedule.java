@@ -39,7 +39,7 @@ import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
-import com.yasp.settings.preferences.SecureSettingListPreference;
+import jp.project2by2.settings.preferences.SecureSettingListPreference;
 
 import java.time.format.DateTimeFormatter;
 import java.time.LocalTime;

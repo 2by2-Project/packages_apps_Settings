@@ -18,7 +18,7 @@
 }
 
 # YaapSettings
--keep class com.yasp.settings.**
+-keep class jp.project2by2.settings**
 
 # We want to keep methods in Activity that could be used in the XML attribute onClick.
 -keepclassmembers class com.android.settings*.** extends android.app.Activity {

@@ -35,8 +35,8 @@ import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
-import com.yasp.settings.preferences.SecureSettingMasterSwitchPreference;
-import com.yasp.settings.preferences.SystemSettingEditTextPreference;
+import jp.project2by2.settings.preferences.SecureSettingMasterSwitchPreference;
+import jp.project2by2.settings.preferences.SystemSettingEditTextPreference;
 
 import java.util.ArrayList;
 import java.util.List;

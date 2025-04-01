@@ -26,7 +26,7 @@ import androidx.preference.PreferenceScreen;
 import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settingslib.core.AbstractPreferenceController;
 
-import com.yasp.settings.preferences.CustomSeekBarPreference;
+import jp.project2by2.settings.preferences.CustomSeekBarPreference;
 
 public class QuickMutePreferenceController extends AbstractPreferenceController
         implements Preference.OnPreferenceChangeListener, PreferenceControllerMixin {

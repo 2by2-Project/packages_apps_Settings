@@ -154,7 +154,7 @@
         android:order="-97" />
 
     <!-- Volume dialog haptics -->
-    <com.yasp.settings.preferences.SystemSettingSwitchPreference
+    <jp.project2by2.settings.preferences.SystemSettingSwitchPreference
         android:key="volume_panel_haptics"
         android:title="@string/volume_panel_haptics_title"
         android:summary="@string/volume_panel_haptics_summary"
@@ -162,7 +162,7 @@
         android:order="-95" />
 
     <!-- Volume dialog timeout -->
-    <com.yasp.settings.preferences.CustomSeekBarPreference
+    <jp.project2by2.settings.preferences.CustomSeekBarPreference
         android:key="volume_dialog_dismiss_timeout"
         android:title="@string/volume_dialog_timeout_title"
         android:summary="@string/volume_dialog_timeout_summary"

@@ -42,10 +42,10 @@ import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
-import com.yasp.settings.preferences.SecureSettingSwitchPreference;
-import com.yasp.settings.preferences.SystemSettingListPreference;
-import com.yasp.settings.preferences.SystemSettingMasterSwitchPreference;
-import com.yasp.settings.preferences.SystemSettingSwitchPreference;
+import jp.project2by2.settings.preferences.SecureSettingSwitchPreference;
+import jp.project2by2.settings.preferences.SystemSettingListPreference;
+import jp.project2by2.settings.preferences.SystemSettingMasterSwitchPreference;
+import jp.project2by2.settings.preferences.SystemSettingSwitchPreference;
 
 import java.util.ArrayList;
 import java.util.Collections;

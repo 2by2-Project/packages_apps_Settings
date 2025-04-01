@@ -37,21 +37,21 @@
         android:title="@string/ambient_display_pickup_summary"
         settings:searchable="false" />
 
-    <com.yasp.settings.preferences.SecureSettingSwitchPreference
+    <jp.project2by2.settings.preferences.SecureSettingSwitchPreference
         android:key="doze_pick_up_gesture_ambient"
         android:title="@string/doze_gesture_ambient_title"
         android:summary="@string/doze_gesture_ambient_summary"
         android:defaultValue="false"
         settings:searchable="false" />
 
-    <com.yasp.settings.preferences.SecureSettingSwitchPreference
+    <jp.project2by2.settings.preferences.SecureSettingSwitchPreference
         android:key="doze_pick_up_gesture_allow_ambient"
         android:title="@string/doze_gesture_allow_ambient_title"
         android:summary="@string/doze_gesture_allow_ambient_summary"
         android:defaultValue="true"
         settings:searchable="false" />
 
-    <com.yasp.settings.preferences.SecureSettingSwitchPreference
+    <jp.project2by2.settings.preferences.SecureSettingSwitchPreference
         android:key="doze_pick_up_gesture_vibrate"
         android:title="@string/doze_gesture_vibrate_title"
         android:summary="@string/doze_gesture_vibrate_summary"

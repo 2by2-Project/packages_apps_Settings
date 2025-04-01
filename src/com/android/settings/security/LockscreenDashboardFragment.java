@@ -53,8 +53,8 @@ import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.search.SearchIndexable;
 
-import com.yasp.settings.preferences.SystemSettingListPreference;
-import com.yasp.settings.preferences.SystemSettingSwitchPreference;
+import jp.project2by2.settings.preferences.SystemSettingListPreference;
+import jp.project2by2.settings.preferences.SystemSettingSwitchPreference;
 
 import java.util.ArrayList;
 import java.util.List;

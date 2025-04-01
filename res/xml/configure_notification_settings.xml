@@ -172,7 +172,7 @@
             android:defaultValue="true" />
 
         <!-- YASP Notification headers -->
-        <com.yasp.settings.preferences.SystemSettingSwitchPreference
+        <jp.project2by2.settings.preferences.SystemSettingSwitchPreference
             android:key="notification_headers"
             android:order="43"
             android:title="@string/notification_headers_title"
@@ -180,7 +180,7 @@
             android:defaultValue="true" />
 
         <!-- Notifications while screen on -->
-        <com.yasp.settings.preferences.SystemSettingSwitchPreference
+        <jp.project2by2.settings.preferences.SystemSettingSwitchPreference
             android:key="notification_sound_vib_screen_on"
             android:order="45"
             android:title="@string/notification_sound_vib_screen_on_title"
@@ -227,7 +227,7 @@
         android:key="on_call_flashlight_category"
         android:title="@string/on_call_flashlight_category">
 
-        <com.yasp.settings.preferences.SystemSettingListPreference
+        <jp.project2by2.settings.preferences.SystemSettingListPreference
             android:key="flashlight_on_call"
             android:order="73"
             android:title="@string/flashlight_on_call_title"
@@ -235,14 +235,14 @@
             android:entryValues="@array/flashlight_on_call_values"
             android:defaultValue="0" />
 
-        <com.yasp.settings.preferences.SystemSettingSwitchPreference
+        <jp.project2by2.settings.preferences.SystemSettingSwitchPreference
             android:key="flashlight_on_call_ignore_dnd"
             android:order="78"
             android:title="@string/flashlight_on_call_ignore_dnd_title"
             android:summary="@string/flashlight_on_call_ignore_dnd_summary"
             android:defaultValue="false" />
 
-        <com.yasp.settings.preferences.CustomSeekBarPreference
+        <jp.project2by2.settings.preferences.CustomSeekBarPreference
             android:key="flashlight_on_call_rate"
             android:order="83"
             android:title="@string/flashlight_on_call_rate_title"
@@ -259,19 +259,19 @@
         android:key="incall_vib_options"
         android:title="@string/incall_vibration_category" >
 
-        <com.yasp.settings.preferences.SystemSettingSwitchPreference
+        <jp.project2by2.settings.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_connect"
             android:order="88"
             android:title="@string/incall_vibrate_connect_title"
             android:defaultValue="false" />
 
-        <com.yasp.settings.preferences.SystemSettingSwitchPreference
+        <jp.project2by2.settings.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_callwaiting"
             android:order="93"
             android:title="@string/incall_vibrate_call_wait_title"
             android:defaultValue="false" />
 
-        <com.yasp.settings.preferences.SystemSettingSwitchPreference
+        <jp.project2by2.settings.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_disconnect"
             android:order="98"
             android:title="@string/incall_vibrate_disconnect_title"

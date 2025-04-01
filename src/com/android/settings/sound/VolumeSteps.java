@@ -30,7 +30,7 @@ import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
-import com.yasp.settings.preferences.CustomSeekBarPreference;
+import jp.project2by2.settings.preferences.CustomSeekBarPreference;
 
 /**
  * volume steps settings under sound

@@ -33,7 +33,7 @@
         settings:userRestriction="no_config_brightness"
         settings:controller="com.android.settings.display.AutoBrightnessDetailPreferenceController"/>
 
-    <com.yasp.settings.preferences.GlobalSettingSeekBarPreference
+    <jp.project2by2.settings.preferences.GlobalSettingSeekBarPreference
         android:key="user_min_auto_brightness"
         android:title="@string/user_min_auto_brightness_title"
         android:summary="@string/user_min_auto_brightness_summary"

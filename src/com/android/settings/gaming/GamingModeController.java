@@ -27,8 +27,8 @@ import com.android.settings.R;
 import com.android.settings.display.ColorModeUtils;
 import com.android.settingslib.core.AbstractPreferenceController;
 
-import com.yasp.settings.preferences.CustomSeekBarPreference;
-import com.yasp.settings.preferences.SystemSettingListPreference;
+import jp.project2by2.settings.preferences.CustomSeekBarPreference;
+import jp.project2by2.settings.preferences.SystemSettingListPreference;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -634,7 +634,7 @@
             android:summary="@string/usb_audio_disable_routing_summary" />
 
         <!-- Unlimit screenrecord -->
-        <com.yasp.settings.preferences.SystemSettingSwitchPreference
+        <jp.project2by2.settings.preferences.SystemSettingSwitchPreference
             android:key="unlimit_screenrecord"
             android:title="@string/unlimit_screenrecord_title"
             android:summary="@string/unlimit_screenrecord_summary"
@@ -774,7 +774,7 @@
             android:title="@string/enable_notes_role_title"
             android:summary="@string/enable_notes_role_summary" />
 
-        <com.yasp.settings.preferences.SystemSettingSwitchPreference
+        <jp.project2by2.settings.preferences.SystemSettingSwitchPreference
             android:key="block_wallpaper_dimming"
             android:title="@string/block_wallpaper_dimming_title"
             android:summary="@string/block_wallpaper_dimming_summary"

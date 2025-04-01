@@ -39,20 +39,20 @@
         android:summary="@string/media_controls_recommendations_description"
         app:controller="com.android.settings.sound.MediaControlsRecommendationController" />
 
-    <com.yasp.settings.preferences.SecureSettingSwitchPreference
+    <jp.project2by2.settings.preferences.SecureSettingSwitchPreference
         android:key="media_controls_always_show_time"
         android:title="@string/media_controls_always_show_time_title"
         android:summary="@string/media_controls_always_show_time_summary"
         android:defaultValue="false" />
 
-    <com.yasp.settings.preferences.SecureSettingSwitchPreference
+    <jp.project2by2.settings.preferences.SecureSettingSwitchPreference
         android:key="media_controls_time_as_next"
         android:title="@string/media_controls_time_as_next_title"
         android:summary="@string/media_controls_time_as_next_summary"
         android:dependency="media_controls_always_show_time"
         android:defaultValue="false" />
 
-    <com.yasp.settings.preferences.SecureSettingSeekBarPreference
+    <jp.project2by2.settings.preferences.SecureSettingSeekBarPreference
         android:key="media_controls_actions"
         android:title="@string/media_controls_actions_title"
         android:summary="@string/media_controls_actions_summary"
@@ -70,7 +70,7 @@
         android:title="@string/media_controls_turbulence_title"
         app:controller="com.android.settings.sound.MediaControlsTurbulenceController" />
 
-    <com.yasp.settings.preferences.SecureSettingSwitchPreference
+    <jp.project2by2.settings.preferences.SecureSettingSwitchPreference
         android:key="media_controls_squiggle"
         android:title="@string/media_controls_squiggle_title"
         android:summary="@string/media_controls_squiggle_summary"

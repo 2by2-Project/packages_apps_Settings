@@ -45,8 +45,8 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 import com.android.settingslib.widget.MainSwitchPreference;
 
-import com.yasp.settings.preferences.CustomSeekBarPreference;
-import com.yasp.settings.preferences.SystemSettingSwitchPreference;
+import jp.project2by2.settings.preferences.CustomSeekBarPreference;
+import jp.project2by2.settings.preferences.SystemSettingSwitchPreference;
 
 import java.util.ArrayList;
 import java.util.Collections;

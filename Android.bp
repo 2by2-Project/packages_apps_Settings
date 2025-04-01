@@ -55,7 +55,7 @@ android_library {
     srcs: [
         "src/**/*.java",
         "src/**/*.kt",
-        "YASP/src/**/*.java",
+        "2byTricks/src/**/*.java",
     ],
     exclude_srcs: [
         "src/com/android/settings/biometrics/fingerprint2/lib/**/*.kt",
@@ -65,7 +65,7 @@ android_library {
         "res",
         "res-export", // for external usage
         "res-product",
-        "YASP/res",
+        "2byTricks/res",
     ],
     static_libs: [
         // External dependencies

@@ -46,7 +46,7 @@
             android:summary="@string/owner_info_settings_summary" />
 
         <!-- YASP lockscreen charging info -->
-        <com.yasp.settings.preferences.SystemSettingSwitchPreference
+        <jp.project2by2.settings.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_battery_info"
             android:title="@string/lockscreen_battery_info_title"
             android:summary="@string/lockscreen_battery_info_summary"
@@ -95,7 +95,7 @@
             android:summary="@string/lockscreen_double_line_clock_summary"
             settings:controller="com.android.settings.display.LockscreenClockPreferenceController" />
 
-        <com.yasp.settings.preferences.SystemSettingListPreference
+        <jp.project2by2.settings.preferences.SystemSettingListPreference
             android:key="lockscreen_weather_provider"
             android:defaultValue="1"
             android:title="@string/lockscreen_weather_title"
@@ -113,19 +113,19 @@
                 android:targetClass="org.omnirom.omnijaws.SettingsActivity" />
         </Preference>
 
-        <com.yasp.settings.preferences.SystemSettingSwitchPreference
+        <jp.project2by2.settings.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_weather_location"
             android:defaultValue="false"
             android:title="@string/lockscreen_weather_location_title"
             android:summary="@string/lockscreen_weather_location_summary" />
 
-        <com.yasp.settings.preferences.SystemSettingSwitchPreference
+        <jp.project2by2.settings.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_weather_text"
             android:defaultValue="true"
             android:title="@string/lockscreen_weather_text_title"
             android:summary="@string/lockscreen_weather_text_summary" />
 
-        <com.yasp.settings.preferences.SystemSettingSwitchPreference
+        <jp.project2by2.settings.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_weather_click_updates"
             android:defaultValue="false"
             android:title="@string/lockscreen_weather_click_updates_title"
@@ -209,7 +209,7 @@
             settings:controller="com.android.settings.display.AmbientDisplayNotificationsPreferenceController" />
 
         <!-- Controls wake for notifications -->
-        <com.yasp.settings.preferences.SecureSettingSwitchPreference
+        <jp.project2by2.settings.preferences.SecureSettingSwitchPreference
             android:key="doze_for_notifications"
             android:title="@string/doze_title"
             android:summary="@string/doze_summary"
@@ -243,7 +243,7 @@
         android:order="1002"
         settings:searchable="false">
 
-        <com.yasp.settings.preferences.SystemSettingSwitchPreference
+        <jp.project2by2.settings.preferences.SystemSettingSwitchPreference
             android:key="double_tap_sleep_lockscreen"
             android:title="@string/double_tap_sleep_lockscreen_title"
             android:summary="@string/double_tap_sleep_lockscreen_summary"

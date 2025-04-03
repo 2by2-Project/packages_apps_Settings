@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2025 The 2by2 Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- OTA App -->
+    <string name="custom_update_settings_title">2by2 Updater</string>
+    <string name="custom_update_settings_summary">Check for the latest version of the rom</string>
+
+    <!-- 2by2 Version -->
+    <string name="custom_version">2by2 Build</string>
+
+    <!-- 2by2 Changelog -->
+    <string name="custom_changelog_title">Changelog</string>
+    <string name="custom_changelog_summary">View the changelogs of recent and current 2by2 version</string>
+
+    <!-- About YAAP -->
+    <string name="about_2by2_title">About 2by2 Project</string>
+    <string name="about_2by2_summary">Our team, source code, telegram group and more</string>
+
+    <!-- QS footer text -->
+    <string name="custom_qs_footer_text_string_summary">Set to empty for default 2by2 Project</string>
+</resources>

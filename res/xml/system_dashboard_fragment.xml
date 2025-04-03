@@ -86,8 +86,8 @@
 
     <Preference
         android:key="update_settings"
-        android:title="@string/update_settings_title"
-        android:summary="@string/update_settings_summary"
+        android:title="@string/custom_update_settings_title"
+        android:summary="@string/custom_update_settings_summary"
         android:icon="@drawable/ic_system_update"
         android:order="-58"
         settings:controller="com.android.settings.system.UpdatePreferenceController">

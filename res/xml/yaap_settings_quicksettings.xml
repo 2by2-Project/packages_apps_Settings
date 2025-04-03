@@ -44,9 +44,9 @@
     <jp.project2by2.settings.preferences.SystemSettingEditTextPreference
         android:key="qs_footer_text_string"
         android:title="@string/qs_footer_text_string_title"
-        android:summary="@string/qs_footer_text_string_summary"
+        android:summary="@string/custom_qs_footer_text_string_summary"
         android:dependency="qs_footer_text_show"
-        android:defaultValue="YAAP" />
+        android:defaultValue="2by2 Project" />
 
     <!-- Media player in QS -->
     <jp.project2by2.settings.preferences.GlobalSettingSwitchPreference

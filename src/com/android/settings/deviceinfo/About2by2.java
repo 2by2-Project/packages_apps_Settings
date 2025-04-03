@@ -44,9 +44,9 @@ import java.util.List;
 import java.util.Map;
 
 @SearchIndexable
-public class AboutYaap extends DashboardFragment {
+public class About2by2 extends DashboardFragment {
 
-    private static final String TAG = "AboutYaap";
+    private static final String TAG = "About2by2";
 
     @Override
     protected int getPreferenceScreenResId() {

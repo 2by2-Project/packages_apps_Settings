@@ -77,15 +77,13 @@
         settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
 
     <!-- YAAP Version -->
-    <!--
     <Preference
-        android:key="yaap_version"
-        android:title="@string/yaap_version"
+        android:key="custom_version"
+        android:title="@string/custom_version"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.YAAPVersionPreferenceController"/>
-    -->
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.CustomVersionPreferenceController"/>
 
     <!-- Build -->
     <Preference
@@ -97,10 +95,10 @@
 
     <!-- Changelog -->
     <Preference
-        android:key="yaap_changelog"
-        android:title="@string/yaap_changelog_title"
-        android:summary="@string/yaap_changelog_summary"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.YAAPChangelogPreferenceController">
+        android:key="custom_changelog"
+        android:title="@string/custom_changelog_title"
+        android:summary="@string/custom_changelog_summary"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.CustomChangelogPreferenceController">
         <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="@string/update_package"
                 android:targetClass="@string/changelog_activity" />

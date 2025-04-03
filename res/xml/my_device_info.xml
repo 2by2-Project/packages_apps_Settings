@@ -60,13 +60,13 @@
             android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
             settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
 
-        <!-- About YAAP -->
+        <!-- About 2by2 Project -->
         <Preference
             android:key="about_category"
             android:order="8"
-            android:title="@string/about_yaap_title"
-            android:summary="@string/about_yaap_summary"
-            android:fragment="com.android.settings.deviceinfo.AboutYaap" />
+            android:title="@string/about_2by2_title"
+            android:summary="@string/about_2by2_summary"
+            android:fragment="com.android.settings.deviceinfo.About2by2" />
 
         <!-- Phone number -->
         <Preference

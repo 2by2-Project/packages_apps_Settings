@@ -52,7 +52,7 @@
         <!-- Redefine the ActionBar style for contentInsetStart -->
         <item name="android:actionBarStyle">@style/Widget.ActionBar</item>
 
-        <item name="preferenceBackgroundColor">@drawable/preference_background</item>
+        <item name="preferenceBackgroundColor">@color/custom_background_color</item>
 
         <!-- For AndroidX AlertDialog -->
         <item name="alertDialogTheme">@style/Theme.AlertDialog</item>
@@ -203,9 +203,9 @@
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:navigationBarDividerColor">@*android:color/ripple_material_light</item>
         <!-- Homepage should follow device default design, the values is same as device default theme.-->
-        <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="android:statusBarColor">@android:color/system_surface_container_light</item>
-        <item name="android:colorBackground">@android:color/system_surface_container_light</item>
+        <item name="android:navigationBarColor">@android:color/white</item>
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:colorBackground">@android:color/white</item>
     </style>
 
     <style name="Theme.Settings.Home.NoAnimation">

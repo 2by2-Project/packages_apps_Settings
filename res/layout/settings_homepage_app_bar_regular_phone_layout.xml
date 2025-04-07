@@ -45,4 +45,10 @@
 
     <include layout="@layout/search_bar"/>
 
+    <View
+        android:id="@+id/customized_divider"
+        android:background="?android:attr/listDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
 </LinearLayout>

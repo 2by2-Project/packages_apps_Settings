@@ -43,7 +43,8 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             app:maxWidth="48dp"
-            app:maxHeight="48dp"/>
+            app:maxHeight="48dp"
+            android:tint="@color/settingslib_materialColorPrimary"/>
 
     </LinearLayout>
 

@@ -470,7 +470,7 @@
     <string name="kernel_telegram" translatable="false"></string>
     <string name="about_website_title">Official Website</string>
     <string name="about_website_summary">Visit our website</string>
-    <string name="about_website_link" translatable="false">https://project2by2.jp</string>
+    <string name="about_website_link">https://project2by2.jp</string>
     <string name="about_tg_title">Telegram Group</string>
     <string name="about_tg_summary">Official, Global Telegram Group</string>
     <string name="about_tg_link" translatable="false">https://t.me/twobytwodiscussion</string>

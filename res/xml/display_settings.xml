@@ -99,7 +99,7 @@
             android:title="@string/accessibility_text_reading_options_title"
             settings:controller="com.android.settings.accessibility.TextReadingFragmentForDisplaySettingsController"/>
 
-        <!-- YASP Monet settings -->
+        <!-- 2byTricks Monet settings -->
         <Preference
             android:key="monet_settings"
             android:title="@string/monet_settings_title"

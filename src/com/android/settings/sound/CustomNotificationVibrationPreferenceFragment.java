@@ -43,7 +43,7 @@ public class CustomNotificationVibrationPreferenceFragment extends DashboardFrag
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.YASP;
+        return MetricsEvent.CUSTOM_SETTINGS;
     }
 
     @Override

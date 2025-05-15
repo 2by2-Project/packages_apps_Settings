@@ -53,7 +53,7 @@
             android:title="@string/owner_info_settings_title"
             android:summary="@string/owner_info_settings_summary" />
 
-        <!-- YASP lockscreen charging info -->
+        <!-- 2byTricks lockscreen charging info -->
         <com.yasp.settings.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_battery_info"
             android:title="@string/lockscreen_battery_info_title"
@@ -164,7 +164,7 @@
             settings:controller="com.android.settings.display.DozeOnChargePreferenceController"
             settings:userRestriction="no_ambient_display" />
 
-        <!-- YASP AOD Schedule -->
+        <!-- 2byTricks AOD Schedule -->
         <Preference
             android:key="always_on_display_schedule"
             android:title="@string/always_on_display_schedule_title"

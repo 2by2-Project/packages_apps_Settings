@@ -5521,7 +5521,7 @@
                 android:value="com.android.settings.development.WirelessDebuggingFragment"/>
         </activity>
 
-        <!-- YAAP Settings -->
+        <!-- 2by2 Project Settings -->
         <activity android:name=".Settings$GamingModeActivity"
                   android:label="@string/gaming_mode_tile_title"
                   android:icon="@drawable/ic_yaap_settings_icon"

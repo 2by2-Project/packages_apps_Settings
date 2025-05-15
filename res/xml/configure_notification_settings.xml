@@ -195,7 +195,7 @@
                 android:targetClass="com.android.cellbroadcastreceiver.CellBroadcastSettings"/>
         </com.android.settingslib.RestrictedPreference>
 
-        <!-- YASP Heads up -->
+        <!-- 2byTricks Heads up -->
         <SwitchPreferenceCompat
             android:key="heads_up_notifications_enabled"
             android:order="37"
@@ -203,7 +203,7 @@
             android:summary="@string/heads_up_summary"
             android:defaultValue="true" />
 
-        <!-- YASP Notification headers -->
+        <!-- 2byTricks Notification headers -->
         <com.yasp.settings.preferences.SystemSettingSwitchPreference
             android:key="notification_headers"
             android:order="43"
@@ -254,7 +254,7 @@
 
     </PreferenceCategory>
 
-    <!-- YASP Import -->
+    <!-- 2byTricks Import -->
     <PreferenceCategory
         android:key="on_call_flashlight_category"
         android:title="@string/on_call_flashlight_category">
@@ -286,7 +286,7 @@
 
     </PreferenceCategory>
 
-    <!-- YASP Import -->
+    <!-- 2byTricks Import -->
     <PreferenceCategory
         android:key="incall_vib_options"
         android:title="@string/incall_vibration_category" >

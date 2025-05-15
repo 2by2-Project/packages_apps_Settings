@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2023 YAAP
+<!-- Copyright (C) 2023 2by2 Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -54,15 +54,15 @@
     <string name="prevent_ringing_option_normal">Normal</string>
 
     <!-- OTA App -->
-    <string name="update_settings_title">Оновлення YAAP</string>
+    <string name="update_settings_title">Оновлення 2by2 Project</string>
     <string name="update_settings_summary">Перевірити доступні оновлення прошивки</string>
 
-    <!-- YAAP Version -->
-    <string name="yaap_version">Версія YAAP</string>
+    <!-- 2by2 Project Version -->
+    <string name="yaap_version">Версія 2by2 Project</string>
 	
-    <!-- YAAP Changelog -->
+    <!-- 2by2 Project Changelog -->
     <string name="yaap_changelog_title">Список змін</string>
-    <string name="yaap_changelog_summary">Показати список останніх змін і версію YAAP</string>
+    <string name="yaap_changelog_summary">Показати список останніх змін і версію 2by2 Project</string>
 
     <!-- QSTile requires unlocking before being accessible -->
     <string name="qstile_requires_unlocking_title">Важливі плитки в шторці вимагають розблокування</string>
@@ -350,8 +350,8 @@
     <!-- ETC category -->
     <string name="etc_category_title">Інше</string>
 
-    <!-- About YAAP -->
-    <string name="about_yaap_title">Про YAAP</string>
+    <!-- About 2by2 Project -->
+    <string name="about_yaap_title">Про 2by2 Project</string>
     <string name="about_yaap_summary">наша команда, відкритий код, група Telegram тощо</string>
 
     <!-- Hotspot extras -->
@@ -369,7 +369,7 @@
     <string name="allow_access_to_obb_directory_title">Дозволити доступ до теки Android/obb</string>
     <string name="allow_access_to_obb_directory_summary">Потрібно для встановлення деяких великих програми (в основному ігри), які використовують файли розширення OBB.</string>
 
-    <!-- YASP Import -->
+    <!-- 2byTricks Import -->
 
 
     <!-- Categories -->
@@ -414,7 +414,7 @@
     <!-- QS footer text -->
     <string name="qs_footer_text_show_title">Відображати текст у нижньому колонтитулі швидких налаштувань</string>
     <string name="qs_footer_text_string_title">Власний текст у нижньому колонтитулі швидких налаштувань</string>
-    <string name="qs_footer_text_string_summary">Залишіть пустим для стандартного тексту YAAP</string>
+    <string name="qs_footer_text_string_summary">Залишіть пустим для стандартного тексту 2by2 Project</string>
 
     <!-- About -->
     <string name="about_title">Про нас</string>

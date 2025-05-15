@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2020 YAAP
+<!-- Copyright (C) 2020 2by2 Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -54,7 +54,7 @@
     <string name="prevent_ringing_option_normal">Normal</string>
 
     <!-- OTA App -->
-    <string name="update_settings_title">YAAP Updater</string>
+    <string name="update_settings_title">2by2 Project Updater</string>
     <string name="update_settings_summary">Check for the latest version of the rom</string>
     <string name="update_package" translatable="false">eu.chainfire.opendelta</string>
     <string name="update_activity" translatable="false">eu.chainfire.opendelta.MainActivity</string>
@@ -63,12 +63,12 @@
     <!-- Radio Diagnostics -->
     <string name="radio_info_title">Radio diagnostics</string>
 
-    <!-- YAAP Version -->
-    <string name="yaap_version">YAAP Build</string>
+    <!-- 2by2 Project Version -->
+    <string name="yaap_version">2by2 Project Build</string>
 
-    <!-- YAAP Changelog -->
+    <!-- 2by2 Project Changelog -->
     <string name="yaap_changelog_title">Changelog</string>
-    <string name="yaap_changelog_summary">View the changelogs of recent and current YAAP version</string>
+    <string name="yaap_changelog_summary">View the changelogs of recent and current 2by2 Project version</string>
 
     <!-- QSTile requires unlocking before being accessible -->
     <string name="qstile_requires_unlocking_title">Secure QS tiles require unlocking</string>
@@ -395,11 +395,11 @@
     <!-- ETC category -->
     <string name="etc_category_title">ETC</string>
 
-    <!-- About YAAP -->
-    <string name="about_yaap_title">About YAAP</string>
+    <!-- About 2by2 Project -->
+    <string name="about_yaap_title">About 2by2 Project</string>
     <string name="about_yaap_summary">Our team, source code, telegram group and more</string>
 
-    <!-- YASP Import -->
+    <!-- 2byTricks Import -->
 
     <!-- Categories -->
     <string name="button_title">Buttons</string>
@@ -447,7 +447,7 @@
     <!-- QS footer text -->
     <string name="qs_footer_text_show_title">Show QS footer text</string>
     <string name="qs_footer_text_string_title">Customize footer text</string>
-    <string name="qs_footer_text_string_summary">Set to empty for default YAAP</string>
+    <string name="qs_footer_text_string_summary">Set to empty for default 2by2 Project</string>
 
     <!-- About -->
     <string name="about_title">About</string>

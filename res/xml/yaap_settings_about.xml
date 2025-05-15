@@ -84,23 +84,20 @@
         </Preference> -->
 
         <Preference
+            android:key="smm_pref"
+            android:title="@string/smm_name"
+            android:summary="@string/smm_title"
+            android:order="99">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="@string/smm_tg"/>
+        </Preference>
+
+        <Preference
             android:key="designer_pref"
             android:title="@string/designer_name"
             android:summary="@string/designer_title"
             android:order="100">
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:data="@string/designer_tg"/>
-        </Preference>
-
-        <Preference
-            android:key="designer2_pref"
-            android:title="@string/designer2_name"
-            android:summary="@string/designer_title"
-            android:order="101">
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:data="@string/designer2_tg"/>
         </Preference>
 
     </PreferenceCategory>
@@ -109,6 +106,16 @@
         android:key="about_external"
         android:title="@string/about_external_category"
         android:order="110">
+
+        <Preference
+            android:key="website_pref"
+            android:title="@string/about_website_title"
+            android:summary="@string/about_website_summary"
+            android:order="110">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="@string/about_website_link"/>
+        </Preference>
 
         <Preference
             android:key="tg_pref"

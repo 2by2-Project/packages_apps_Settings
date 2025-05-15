@@ -25,7 +25,7 @@ import com.android.settings.core.BasePreferenceController;
 public class YAAPVersionPreferenceController extends BasePreferenceController {
 
     @VisibleForTesting
-    public static final String YAAP_PROP = "ro.yaap.version";
+    public static final String CUSTOM_PROP = "ro.2by2.version";
 
     public YAAPVersionPreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
@@ -38,7 +38,7 @@ public class YAAPVersionPreferenceController extends BasePreferenceController {
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(YAAP_PROP,
+        return SystemProperties.get(CUSTOM_PROP,
                 mContext.getString(R.string.device_info_default));
     }
 }

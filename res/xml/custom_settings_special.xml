@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2025 The 2by2 Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/special_title"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+    <!-- System Category -->
+    <PreferenceCategory
+        android:key="category_system"
+        android:title="@string/category_system_title">
+
+        <!-- Disable GMS props -->
+        <jp.project2by2.settings.preferences.SystemPropertySwitchPreference
+            android:key="persist.sys.pihooks.disable.gms_props"
+            android:title="@string/spoofing_pif_toggle_title"
+            android:summary="@string/spoofing_pif_toggle_summary"
+            android:defaultValue="false" />
+
+        <!-- Disable key attestation blocking -->
+        <jp.project2by2.settings.preferences.SystemPropertySwitchPreference
+            android:key="persist.sys.pihooks.disable.gms_key_attestation_block"
+            android:title="@string/spoofing_pif_key_attestation_toggle_title"
+            android:summary="@string/spoofing_pif_key_attestation_toggle_summary"
+            android:defaultValue="false" />
+
+        <!-- Unlimited Google Photos -->
+        <jp.project2by2.settings.preferences.SystemPropertySwitchPreference
+            android:key="persist.sys.pixelprops.gphotos"
+            android:title="@string/spoofing_photos_toggle_title"
+            android:summary="@string/spoofing_photos_toggle_summary"
+            android:defaultValue="true" />
+
+        <!-- Force disable camera sound -->
+        <jp.project2by2.settings.preferences.SystemPropertySwitchPreference
+            android:key="persist.sys.camera.sound.disable"
+            android:title="@string/disable_camera_sounds_toggle_title"
+            android:summary="@string/disable_camera_sounds_toggle_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

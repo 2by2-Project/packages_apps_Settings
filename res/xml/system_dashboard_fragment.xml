@@ -128,6 +128,14 @@
         android:fragment="com.android.settings.system.MiscSettings"
         android:icon="@drawable/ic_settings_miscs"/>
 
+    <!-- 2byTricks Special -->
+    <Preference
+        android:key="special_category"
+        android:order="-41"
+        android:title="@string/special_title"
+        android:fragment="com.android.settings.system.SpecialSettings"
+        android:icon="@drawable/ic_2by2"/>
+
     <com.android.settings.spa.preference.ComposePreference
         android:key="developer_options"
         android:order="-40"

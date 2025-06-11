@@ -27,6 +27,14 @@
             android:summary="@string/spoofing_pif_key_attestation_toggle_summary"
             android:defaultValue="false" />
 
+        <!-- Select keybox from file -->
+        <Preference
+            android:key="pref_import_keybox"
+            android:title="@string/spoofing_pif_import_keybox_pref_title"
+            android:summary="@string/spoofing_pif_import_keybox_pref_summary" />
+
+        <PreferenceCategory />
+
         <!-- Unlimited Google Photos -->
         <jp.project2by2.settings.preferences.SystemPropertySwitchPreference
             android:key="persist.sys.pixelprops.gphotos"

@@ -20,6 +20,15 @@
     <string name="spoofing_pif_toggle_summary">Disable the ROM\'s built-in Play Integrity fix spoofing</string>
     <string name="spoofing_pif_key_attestation_toggle_title">Disable key attestation blocking</string>
     <string name="spoofing_pif_key_attestation_toggle_summary">Allow to use key attestation feature in Play integrity</string>
+    <string name="spoofing_pif_import_keybox_pref_title">Select keybox xml file</string>
+    <string name="spoofing_pif_import_keybox_pref_summary">Load your own keybox for key attestation</string>
+    <string name="spoofing_pif_import_keybox_mes_success">Keybox file has imported.</string>
+    <string name="spoofing_pif_import_keybox_mes_failed">Failed to import keybox file.</string>
+    <string name="spoofing_pif_remove_keybox_pref_title">Remove keybox xml file</string>
+    <string name="spoofing_pif_remove_keybox_pref_summary">Remove existing imported keybox</string>
+    <string name="spoofing_pif_remove_keybox_mes_confirm">Do you want to remove existing keybox file?</string>
+    <string name="spoofing_pif_remove_keybox_mes_success">Keybox file has removed.</string>
+    <string name="spoofing_pif_remove_keybox_mes_failed">Failed to remove keybox file.</string>
     <string name="spoofing_photos_toggle_title">Unlimited Google Photos</string>
     <string name="spoofing_photos_toggle_summary">Spoof the Google Photos app as a Pixel XL</string>
     <string name="disable_camera_sounds_toggle_title">Force disable camera sounds</string>

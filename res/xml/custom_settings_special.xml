@@ -13,12 +13,6 @@
         android:key="category_system"
         android:title="@string/category_system_title">
 
-        <!-- Keybox Data -->
-        <jp.project2by2.settings.preferences.KeyboxDataPreference
-            android:key="spoofing_keybox_data_setting"
-            android:title="@string/spoofing_keybox_data_title"
-            android:summary="@string/spoofing_keybox_data_summary" />
-
         <!-- Unlimited Google Photos -->
         <jp.project2by2.settings.preferences.SystemPropertySwitchPreference
             android:key="persist.sys.pixelprops.gphotos"

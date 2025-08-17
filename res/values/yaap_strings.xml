@@ -116,6 +116,8 @@
     <string name="gaming_mode_ringer_disabled">Don\'t change</string>
     <string name="gaming_mode_ringer_vibrate">Vibrate</string>
     <string name="gaming_mode_ringer_silent">Silent</string>
+    <string name="gaming_mode_smooth_display_title">Smooth Display</string>
+    <string name="gaming_mode_smooth_display_summary">Whether to enable Smooth Display</string>
     <string name="gaming_mode_color_mode_title">Color Mode</string>
     <string name="gaming_mode_night_light_title">Night Light</string>
     <string name="gaming_mode_night_light_summary">Whether to disable Night Light and schedule</string>
@@ -665,6 +667,10 @@
     <!-- Backup Transport selector -->
     <string name="transport_selector_title">Backup Transport</string>
 
+    <!-- Spoofing toggle -->
+    <string name="cert_overlay_title">Spoof certified properties</string>
+    <string name="cert_overlay_summary">Spoof PI certified properties to GMS\nRequires a reboot to apply</string>
+
     <!-- Weather -->
     <string name="weather_settings_title">Weather settings</string>
     <string name="weather_settings_summary">Setup icon pack and weather service</string>
@@ -710,6 +716,14 @@
     <!-- Three-fingers-swipe to screenshot -->
     <string name="three_finger_gesture">Swipe to screenshot</string>
     <string name="three_finger_gesture_summary">Swipe down with three fingers to take a screenshot</string>
+
+    <!-- Key combo screenshot gesture -->
+    <string name="screenshot_key_gesture_enabled">Screenshot key combo</string>
+    <string name="screenshot_key_gesture_enabled_summary">Press volume down and power keys to take a screenshot</string>
+
+    <!-- Volume up + down mute gesture -->
+    <string name="volume_up_down_mute_gesture">Mute key combo</string>
+    <string name="volume_up_down_mute_gesture_summary">Press volume up and down to mute and unmute media volume\nNote accessibility shortcut, if enabled, takes precedence</string>
 
     <!-- Long press navbar to search -->
     <string name="navbar_long_press_gesture_title">Long press to search</string>
@@ -762,4 +776,14 @@
     <!-- Keybox Data -->
     <string name="keybox_data_title">Select keybox XML to spoof</string>
     <string name="keybox_data_summary">Select keybox XML used for key attestation spoofing for all apps system wide. Click the delete button in order to reset the keybox data values used by the system.</string>
+
+    <!-- Charging sounds / vibration -->
+    <string name="charging_sounds">Charging sounds</string>
+    <string name="charging_vibrations">Charging vibrations</string>
+
+    <!-- Wake on charge -->
+    <string name="wake_on_charge_title">Wake on charge</string>
+    <string name="wake_on_charge_disabled">@string/disabled</string>
+    <string name="wake_on_charge_enabled">Fully wake</string>
+    <string name="wake_on_charge_pulse_doze">Pulse doze</string>
 </resources>

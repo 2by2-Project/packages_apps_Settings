@@ -36,6 +36,7 @@ import com.yasp.settings.preferences.CustomSeekBarPreference;
 import com.yasp.settings.preferences.SystemSettingListPreference;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -49,6 +50,7 @@ public class GamingModeController extends AbstractPreferenceController
     public static final String GAMING_MODE_SMOOTH_DISPLAY_KEY = "gaming_mode_smooth_display";
     public static final String GAMING_MODE_TOUCH_SENSITIVITY_KEY = "gaming_mode_touch_sensitivity";
     public static final String GAMING_MODE_HIGH_TOUCH_RATE_KEY = "gaming_mode_high_touch_rate";
+    public static final String GAMING_MODE_LTPO_FEATURES_KEY = "gaming_mode_ltpo_features";
     public static final String GAMING_MODE_COLOR_KEY = "gaming_mode_color_mode";
 
     private CustomSeekBarPreference mMediaVolume;
@@ -91,6 +93,11 @@ public class GamingModeController extends AbstractPreferenceController
             pref.setVisible(false);
         }
 
+        if (!isLtpoFeaturesAvailable(mContext)) {
+            Preference pref = screen.findPreference(GAMING_MODE_LTPO_FEATURES_KEY);
+            pref.setVisible(false);
+        }
+
         if (!isSmoothDisplayAvailable(mContext)) {
             Preference pref = screen.findPreference(GAMING_MODE_SMOOTH_DISPLAY_KEY);
             pref.setVisible(false);
@@ -98,22 +105,30 @@ public class GamingModeController extends AbstractPreferenceController
 
         mColorMode = screen.findPreference(GAMING_MODE_COLOR_KEY);
         if (isColorModeAvailable(mContext)) {
+            List<Integer> availableColorModes = Arrays.stream(
+                    ColorModeUtils.getAvailableColorModes(mContext)).boxed().toList();
             Map<Integer, String> colorModeMapping = ColorModeUtils.getColorModeMapping(
                     mContext.getResources());
 
             List<String> entries = new ArrayList<>();
             entries.add(mContext.getString(R.string.gaming_mode_ringer_disabled));
-            entries.addAll(colorModeMapping.values());
+            List<String> values = new ArrayList<>();
+            values.add("-1");
+            for (Map.Entry<Integer, String> entry : colorModeMapping.entrySet()) {
+                if (!availableColorModes.contains(entry.getKey())) {
+                    continue;
+                }
+                // entries are values and values are keys
+                entries.add(entry.getValue());
+                values.add(String.valueOf(entry.getKey()));
+            }
+
             CharSequence[] entriesArr = new CharSequence[entries.size()];
             entriesArr = entries.toArray(entriesArr);
             mColorMode.setEntries(entriesArr);
 
-            CharSequence[] entryValuesArr = new CharSequence[colorModeMapping.keySet().size() + 1];
-            entryValuesArr[0] = "-1";
-            int i = 1;
-            for (Integer key : colorModeMapping.keySet()) {
-                entryValuesArr[i++] = String.valueOf(key);
-            }
+            CharSequence[] entryValuesArr = new CharSequence[values.size()];
+            entryValuesArr = values.toArray(entryValuesArr);
             mColorMode.setEntryValues(entryValuesArr);
 
             value = Settings.System.getInt(resolver, GAMING_MODE_COLOR_KEY, -1);
@@ -172,9 +187,12 @@ public class GamingModeController extends AbstractPreferenceController
 	    return context.getResources().getBoolean(R.bool.config_supportHighTouchRate);
     }
 
+    public static boolean isLtpoFeaturesAvailable(Context context) {
+	    return context.getResources().getBoolean(R.bool.config_supportLtpoFeatures);
+    }
+
     public static boolean isColorModeAvailable(Context context) {
-        final int[] availableColorModes = context.getResources().getIntArray(
-                com.android.internal.R.array.config_availableColorModes);
+        final int[] availableColorModes = ColorModeUtils.getAvailableColorModes(context);
         if (availableColorModes.length == 0) {
             return false;
         }

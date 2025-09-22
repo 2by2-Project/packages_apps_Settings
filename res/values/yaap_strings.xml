@@ -132,6 +132,8 @@
     <string name="gaming_mode_touch_sensitivity_title">Touch sensitivity</string>
     <string name="gaming_mode_touch_sensitivity_summary">Whether to enable increased touch sensitivity</string>
     <string name="gaming_mode_touch_rate_title">Increase touch polling rate</string>
+    <string name="gaming_mode_ltpo_features_title">LTPO features</string>
+    <string name="gaming_mode_ltpo_features_summary">Whether to enable device-specific adaptive idle and frame rate features for improving efficiency</string>
     <string name="gaming_mode_touch_rate_summary">Whether to improve touch response by utilizing a higher polling rate</string>
     <string name="gaming_mode_extra_dim_title">Extra Dim</string>
     <string name="gaming_mode_extra_dim_summary">Whether to disable extra dim and schedule</string>
@@ -446,6 +448,10 @@
     <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
     <string name="lockscreen_battery_info_summary">Display negotiated charger max current and voltage and battery temperature on lockscreen while charging</string>
 
+    <!-- Lockscreen remaining charging time -->
+    <string name="lockscreen_charging_time_title">Lockscreen charging time</string>
+    <string name="lockscreen_charging_time_summary">Display the remaining time for charging to finish</string>
+
     <!-- QS footer text -->
     <string name="qs_footer_text_show_title">Show QS footer text</string>
     <string name="qs_footer_text_string_title">Customize footer text</string>
@@ -681,6 +687,10 @@
     <string name="lockscreen_weather_location_summary">Display current weather location</string>
     <string name="lockscreen_weather_text_title">Current condition</string>
     <string name="lockscreen_weather_text_summary">Display current weather condition summary</string>
+    <string name="lockscreen_weather_wind_info_title">Current wind</string>
+    <string name="lockscreen_weather_wind_info_summary">Display current weather wind info</string>
+    <string name="lockscreen_weather_humidity_info_title">Current humidity</string>
+    <string name="lockscreen_weather_humidity_info_summary">Display current weather humidity info</string>
     <string name="lockscreen_weather_style_title">Pixel style</string>
     <string name="lockscreen_weather_style_summary">Display weather as separate row</string>
     <string name="lockscreen_weather_click_updates_title">Tap to update</string>
@@ -689,6 +699,7 @@
     <string name="lockscreen_weather_provider_none">None</string>
     <string name="lockscreen_weather_provider_default">Google (default)</string>
     <string name="lockscreen_weather_provider_omni">OmniJaws</string>
+    <string name="lockscreen_weather_provider_toast">Requires a SystemUI restart to take effect</string>
 
     <!-- QS WiFi / Bluetooth auto on -->
     <string name="qs_wifi_auto_on_title">Automatic WiFi on</string>
@@ -773,6 +784,10 @@
     <string name="touch_rate_title">Increase touch polling rate</string>
     <string name="touch_rate_summary">Improves touch response by utilizing a higher polling rate</string>
 
+    <!-- Ltpo features -->
+    <string name="ltpo_features_title">Enable LTPO features</string>
+    <string name="ltpo_features_summary">Enables device-specific adaptive idle and frame rate features for improving efficiency</string>
+
     <!-- Keybox Data -->
     <string name="keybox_data_title">Select keybox XML to spoof</string>
     <string name="keybox_data_summary">Select keybox XML used for key attestation spoofing for all apps system wide. Click the delete button in order to reset the keybox data values used by the system.</string>
@@ -786,4 +801,24 @@
     <string name="wake_on_charge_disabled">@string/disabled</string>
     <string name="wake_on_charge_enabled">Fully wake</string>
     <string name="wake_on_charge_pulse_doze">Pulse doze</string>
+
+    <!-- DC Dim schedule -->
+    <string name="dc_dim_title">DC Dimming</string>
+    <string name="dc_dim_summary">Useful for people who are sensitive to PWM\nSide effects include eye strain, nausea and migraines.\nEnabling this usually implies less accurate display colors</string>
+    <string name="schedule_disabled">No schedule</string>
+
+    <!-- Data Usage Cycle -->
+    <string name="billing_cycle_type_title">Mobile data usage cycle type</string>
+    <string name="billing_cycle_type_monthly">Monthly</string>
+    <string name="billing_cycle_type_weekly">Weekly</string>
+    <string name="billing_cycle_type_daily">Daily</string>
+    <string name="billing_cycle_less_than_one_hour_left">Less than 1 hour left</string>
+    <string name="billing_cycle_hours_left">{count, plural,
+        =1      {# hour left}
+        other   {# hours left}
+        }</string>
+    <string name="cycle_type_weekly_title">Usage cycle reset day</string>
+    <string name="cycle_type_weekly_sub">Day of each week:\n1 = Monday</string>
+    <string name="cycle_type_daily_title">Usage cycle reset hour</string>
+    <string name="cycle_type_daily_sub">Hour of each day:</string>
 </resources>

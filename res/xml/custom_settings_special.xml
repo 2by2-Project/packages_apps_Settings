@@ -20,13 +20,6 @@
             android:summary="@string/spoofing_pif_toggle_summary"
             android:defaultValue="false" />
 
-        <!-- Disable key attestation blocking -->
-        <jp.project2by2.settings.preferences.SystemPropertySwitchPreference
-            android:key="persist.sys.pihooks.disable.gms_key_attestation_block"
-            android:title="@string/spoofing_pif_key_attestation_toggle_title"
-            android:summary="@string/spoofing_pif_key_attestation_toggle_summary"
-            android:defaultValue="false" />
-
         <!-- Unlimited Google Photos -->
         <jp.project2by2.settings.preferences.SystemPropertySwitchPreference
             android:key="persist.sys.pixelprops.gphotos"

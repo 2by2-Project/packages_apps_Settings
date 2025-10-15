@@ -10,4 +10,7 @@
     <!-- Indicates whether device has a side mounted fingerprint sensor,
          but a dedicated one, i.e. not embedded in the power button. -->
     <bool name="config_is_side_fps" translatable="false">false</bool>
+
+    <!-- Whether to felica reset feature is supported by device -->
+    <bool name="config_felica_reset_supported">false</bool>
 </resources>

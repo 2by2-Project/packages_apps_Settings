@@ -34,7 +34,7 @@
         android:key="felica_reset"
         android:title="@string/felica_reset_title"
         settings:controller="com.android.settings.nfc.FelicaResetPreferenceController" />
-    
+
     <!-- Bluetooth and WiFi reset -->
     <com.android.settings.spa.preference.ComposePreference
         android:key="network_reset_bluetooth_wifi_pref"

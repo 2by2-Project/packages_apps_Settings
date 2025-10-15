@@ -15,6 +15,8 @@ import com.android.settings.Utils;
 import com.android.settings.core.BasePreferenceController;
 import com.android.settings.system.ResetDashboardFragment;
 
+import com.android.settings.R;
+
 public class FelicaResetPreferenceController extends BasePreferenceController {
     private ResetDashboardFragment mHostFragment;
     private final UserManager mUm;
@@ -46,10 +48,10 @@ public class FelicaResetPreferenceController extends BasePreferenceController {
 
     @Override
     public int getAvailabilityStatus() {
-         return isFelicaSupported() ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
+         return isFelicaResetSupported() ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 
-    private boolean isFelicaSupported() {
+    private boolean isFelicaResetSupported() {
         try {
             PackageInfo pi = mContext.getPackageManager().getPackageInfo(FELICA_PACKAGE, 0);
             if (!pi.applicationInfo.enabled) {
@@ -58,7 +60,7 @@ public class FelicaResetPreferenceController extends BasePreferenceController {
         } catch (PackageManager.NameNotFoundException e) {
             return false;
         }
-        return true;
+        return mContext.getResources().getBoolean(R.bool.config_felica_reset_supported);
     }
 
     private void launchFelicaResetActivity() {

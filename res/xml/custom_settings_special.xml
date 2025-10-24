@@ -13,6 +13,13 @@
         android:key="category_system"
         android:title="@string/category_system_title">
 
+        <!-- Block attestation even with Keybox Data -->
+        <jp.project2by2.settings.preferences.SystemPropertySwitchPreference
+            android:key="persist.sys.pixelprops.gmscertchain"
+            android:title="@string/spoofing_gmscertchain_toggle_title"
+            android:summary="@string/spoofing_gmscertchain_toggle_summary"
+            android:defaultValue="false" />
+
         <!-- Unlimited Google Photos -->
         <jp.project2by2.settings.preferences.SystemPropertySwitchPreference
             android:key="persist.sys.pixelprops.gphotos"

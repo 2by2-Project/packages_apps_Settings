@@ -34,6 +34,8 @@
     <string name="category_system_title">System</string>
 
     <!-- System -->
+    <string name="spoofing_gmscertchain_toggle_title">Disable forcing strong integrity</string>
+    <string name="spoofing_gmscertchain_toggle_summary">When enabled, do not enforce strong integrity from valid custom keybox and depend on Google Play Integrity spoof to fix apps like Google Pay</string>
     <string name="spoofing_photos_toggle_title">Unlimited Google Photos</string>
     <string name="spoofing_photos_toggle_summary">Spoof the Google Photos app as a Pixel XL</string>
     <string name="disable_camera_sounds_toggle_title">Force disable camera sounds</string>
